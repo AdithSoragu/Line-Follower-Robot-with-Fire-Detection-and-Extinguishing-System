@@ -202,8 +202,6 @@ The servo scans:
 
 This helps identify the approximate flame location.
 
-
-
 ---
 
 # 🚀 Applications
