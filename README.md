@@ -142,20 +142,6 @@ The sensors detect:
 
 ---
 
-# 📌 Motor Driver Connections
-
-| Motor Driver Pin | Function |
-|------------------|----------|
-| IN1 | Right Motor Direction |
-| IN2 | Right Motor Direction |
-| IN3 | Left Motor Direction |
-| IN4 | Left Motor Direction |
-| ENA | Right Motor Speed |
-| ENB | Left Motor Speed |
-
-
----
-
 # 📷 Circuit Diagram
 
 The circuit includes:
