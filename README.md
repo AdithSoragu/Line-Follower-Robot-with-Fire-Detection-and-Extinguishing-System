@@ -1,9 +1,10 @@
-# 🤖 Line Follower Robot with Fire Detection and Extinguishing System
+# 🤖 Arduino Line Follower Robot using IR Sensors and L298N Motor Driver
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Arduino-blue">
-  <img src="https://img.shields.io/badge/Language-C%2FC%2B%2B-orange">
-  <img src="https://img.shields.io/badge/Project-Robotics-success">
+  <img src="https://img.shields.io/badge/Language-Embedded%20C-orange">
+  <img src="https://img.shields.io/badge/Robot-Line%20Follower-success">
+  <img src="https://img.shields.io/badge/Motor%20Driver-L298N-red">
   <img src="https://img.shields.io/badge/Status-Completed-brightgreen">
 </p>
 
@@ -11,65 +12,59 @@
 
 # 📌 Project Overview
 
-This project implements a **Line Follower Robot with Fire Detection and Extinguishing System** using **Arduino**.
+This project demonstrates the design and implementation of an **Arduino-based Line Follower Robot** using:
+- IR sensors
+- L298N motor driver
+- DC motors
+- Arduino UNO
 
-The robot is capable of:
-- Following a black line path using IR sensors
-- Detecting fire using a flame sensor
-- Automatically stopping when fire is detected
-- Activating a fan to extinguish fire
-- Rotating a servo motor to scan the fire direction
+The robot autonomously follows a black line path by continuously detecting line position using infrared sensors and adjusting motor movement accordingly.
 
-The project combines:
-- Robotics
-- Embedded Systems
-- Sensor Interfacing
-- Automation
-- Fire Safety Concepts
+The project focuses on:
+- Embedded systems
+- Robotics automation
+- Sensor interfacing
+- Motor control
+- Autonomous navigation
 
 ---
 
 # 🎯 Objectives
 
-The main objectives of this project are:
+The major objectives of this project are:
 
 - Design an autonomous line follower robot
-- Detect fire using flame sensors
-- Automatically activate fire extinguishing mechanism
-- Control DC motors using Arduino
-- Interface servo motor and sensors
-- Understand robotics automation concepts
+- Interface IR sensors with Arduino
+- Control DC motors using L298N driver
+- Implement line tracking logic
+- Understand robotic movement control
+- Learn real-time sensor processing
 
 ---
 
 # 🧠 Introduction
 
-Line follower robots are autonomous robots that follow a predefined path using IR sensors.
+A line follower robot is an autonomous robot that follows a predefined path marked using a black line on a white surface.
 
-In this project, additional fire safety functionality is integrated:
-- Flame detection
-- Automatic stopping
-- Fan-based fire extinguishing system
+The robot uses:
+- IR sensors to detect the line
+- Arduino UNO for decision making
+- L298N motor driver for motor control
 
-This makes the robot useful for:
-- Industrial safety
-- Smart automation
-- Robotics learning
-- Fire monitoring applications
+Based on sensor outputs, the Arduino controls motor direction and speed to keep the robot aligned with the path.
 
 ---
 
-# 🏗️ Project Architecture
+# 🏗️ System Architecture
 
-The system consists of:
+The robot consists of:
 
-- Arduino Controller
+- Arduino UNO
 - IR Sensors
-- Flame Sensor
-- Servo Motor
+- L298N Motor Driver
 - DC Motors
-- Motor Driver Circuit
-- Fan/Coreless Motor
+- Power Supply
+- Switch Module
 - Robot Chassis
 
 ---
@@ -79,11 +74,11 @@ The system consists of:
 ```text
 Line_Follower_Robot/
 │
-├── line_follower.ino       # Arduino Source Code
-├── circuit_diagram.png     # Circuit Diagram
-├── robot_images/           # Project Images
-├── components_list.txt     # Components Used
-└── README.md               # Documentation
+├── line_follower.ino        # Arduino Source Code
+├── circuit_diagram.png      # Circuit Connections
+├── robot_images/            # Project Images
+├── documentation/           # Reports and Notes
+└── README.md                # Documentation
 ```
 
 ---
@@ -94,13 +89,12 @@ Line_Follower_Robot/
 |-----------|----------|
 | Arduino UNO | Main Controller |
 | IR Sensors | Line Detection |
-| Flame Sensor | Fire Detection |
-| Servo Motor | Fire Scanning |
+| L298N Motor Driver | Motor Control |
 | DC Motors | Robot Movement |
-| Motor Driver | Motor Control |
-| Fan/Coreless Motor | Fire Extinguishing |
-| Robot Chassis | Mechanical Structure |
-| Wheels | Movement |
+| Wheels | Mobility |
+| Battery Supply | Power Source |
+| Switch | Power ON/OFF |
+| Chassis | Robot Structure |
 
 ---
 
@@ -113,186 +107,196 @@ Line_Follower_Robot/
 
 ---
 
-# 📌 Pin Configuration
+# 📌 Circuit Connections
 
-| Component | Pin |
-|-----------|-----|
-| Right IR Sensor | A0 |
-| Middle IR Sensor | A1 |
-| Left IR Sensor | A2 |
-| Flame Sensor | D2 |
-| Servo Motor | D3 |
-| Fan Motor | D2 |
-| Right Motor Enable | D6 |
-| Left Motor Enable | D5 |
+The robot uses:
+- Two IR sensors for line detection
+- L298N motor driver for controlling motors
+- Arduino UNO as the central controller
+
+---
+
+# 🔌 Power Supply
+
+```text
+7V – 12V DC
+```
+
+Power is supplied to:
+- Arduino UNO
+- Motor Driver
+- DC Motors
+
+---
+
+# 📌 IR Sensor Connections
+
+| IR Sensor | Arduino Pin |
+|-----------|-------------|
+| IR Right | A0 |
+| IR Left | A1 |
+
+The sensors detect:
+- Black line
+- White surface
+
+---
+
+# 📌 Motor Driver Connections
+
+| Motor Driver Pin | Function |
+|------------------|----------|
+| IN1 | Right Motor Direction |
+| IN2 | Right Motor Direction |
+| IN3 | Left Motor Direction |
+| IN4 | Left Motor Direction |
+| ENA | Right Motor Speed |
+| ENB | Left Motor Speed |
 
 ---
 
 # 🔄 Working Principle
 
-The robot continuously follows a line using IR sensors while monitoring for fire using a flame sensor.
+The line follower robot continuously detects the line using IR sensors.
+
+The Arduino reads sensor outputs and controls the motors accordingly.
 
 ---
 
-# 🚗 Line Following Operation
+# 🚗 Forward Movement
 
-The IR sensors detect the black line path.
-
----
-
-## Forward Movement
-
+When:
 ```text
-Left Sensor = LOW
-Right Sensor = LOW
+Both sensors detect the black line
 ```
 
-Both motors move forward.
+The robot moves forward.
 
 ---
 
-## Right Turn
+# ↩️ Left Turn
 
+When:
 ```text
-Right Sensor = HIGH
-Left Sensor = LOW
+Left sensor moves away from line
+```
+
+The robot turns left to correct its position.
+
+---
+
+# ↪️ Right Turn
+
+When:
+```text
+Right sensor moves away from line
+```
+
+The robot turns right to correct its direction.
+
+---
+
+# 🛑 Stop Condition
+
+When:
+```text
+Both sensors fail to detect the line
+```
+
+The robot stops moving.
+
+---
+
+# 🧩 Arduino Code Logic
+
+The Arduino program:
+- Reads sensor values
+- Controls motor directions
+- Adjusts motor speed
+- Maintains line tracking
+
+---
+
+# 📌 Sensor Reading
+
+```cpp
+int rightIRSensorValue = digitalRead(IR_SENSOR_RIGHT);
+int leftIRSensorValue = digitalRead(IR_SENSOR_LEFT);
+```
+
+Reads line sensor outputs.
+
+---
+
+# 📌 Forward Logic
+
+```cpp
+rotateMotor(MOTOR_SPEED, MOTOR_SPEED);
+```
+
+Both motors rotate forward.
+
+---
+
+# 📌 Turning Logic
+
+```cpp
+rotateMotor(-MOTOR_SPEED, MOTOR_SPEED);
 ```
 
 Robot turns right.
 
----
-
-## Left Turn
-
-```text
-Right Sensor = LOW
-Left Sensor = HIGH
+```cpp
+rotateMotor(MOTOR_SPEED, -MOTOR_SPEED);
 ```
 
 Robot turns left.
 
 ---
 
-## Stop Condition
-
-```text
-Both Sensors HIGH
-```
-
-Robot stops moving.
-
----
-
-# 🔥 Fire Detection System
-
-The flame sensor continuously monitors fire conditions.
-
-When fire is detected:
-- Robot stops immediately
-- Fan motor turns ON
-- Servo motor scans the fire area
-- Fire extinguishing process begins
-
----
-
-# 🌀 Servo Motor Operation
-
-The servo motor rotates between:
-- 40°
-- 90°
-- 140°
-
-This helps scan the direction of the flame.
-
----
-
-# 🌬️ Fire Extinguishing Mechanism
-
-A fan/coreless motor is activated when fire is detected.
-
-The fan:
-- Blows air toward the flame
-- Helps extinguish small fires
-
----
-
-# 🧩 Code Explanation
-
----
-
-# 📌 IR Sensor Logic
-
-```cpp
-if (rightIRSensorValue == LOW && leftIRSensorValue == LOW)
-{
-    rotateMotor(MOTOR_SPEED, MOTOR_SPEED);
-}
-```
-
-Robot moves forward when both sensors detect the line.
-
----
-
-# 📌 Fire Detection Logic
-
-```cpp
-if(flameValue == LOW)
-```
-
-LOW signal indicates fire detection.
-
----
-
-# 📌 Fan Activation
-
-```cpp
-digitalWrite(FAN_PIN,HIGH);
-```
-
-Turns ON fan motor during fire detection.
-
----
-
-# 📌 Servo Scanning
-
-```cpp
-fireServo.write(40);
-fireServo.write(90);
-fireServo.write(140);
-```
-
-Servo scans different directions to locate fire.
-
----
-
 # 📌 Motor Control Function
 
 ```cpp
-rotateMotor(int rightMotorSpeed, int leftMotorSpeed)
+void rotateMotor(int rightMotorSpeed, int leftMotorSpeed)
 ```
 
 Controls:
-- Robot direction
-- Speed
-- Turning operations
+- Motor direction
+- Robot movement
+- Speed adjustment
+
+---
+
+# 📷 Circuit Diagram
+
+The circuit includes:
+- Arduino UNO
+- Two IR sensors
+- L298N motor driver
+- Two DC motors
+- External power supply
+
+The wiring diagram clearly shows:
+- Sensor connections
+- Motor driver interface
+- Power distribution
 
 ---
 
 # ▶️ How to Run the Project
 
-## Step 1: Connect Hardware
+## Step 1: Assemble Hardware
 
 Connect:
+- Arduino UNO
 - IR sensors
-- Flame sensor
-- Motors
-- Servo motor
-- Fan motor
-- Arduino board
+- L298N motor driver
+- DC motors
+- Battery supply
 
 ---
 
-## Step 2: Upload Code
+## Step 2: Upload Arduino Code
 
 Open Arduino IDE and upload:
 
@@ -302,28 +306,36 @@ line_follower.ino
 
 ---
 
-## Step 3: Power the Robot
+## Step 3: Prepare Track
 
-Provide external power supply to motors and Arduino.
-
----
-
-## Step 4: Test the Robot
-
-- Place robot on black line track
-- Introduce flame source
-- Observe automatic fire detection and extinguishing
+Create a black line path on a white surface.
 
 ---
 
-# 📊 Features of the System
+## Step 4: Power the Robot
 
-- Autonomous line following
-- Fire detection capability
-- Automatic fire extinguishing
-- Servo-based flame scanning
-- Real-time sensor processing
-- Embedded robotic automation
+Switch ON the robot using external power supply.
+
+---
+
+## Step 5: Test Navigation
+
+Place robot on track and observe:
+- Forward movement
+- Left turns
+- Right turns
+- Automatic line correction
+
+---
+
+# 📊 Features of the Robot
+
+- Autonomous navigation
+- Real-time line tracking
+- Motor speed control
+- Compact robotic design
+- Embedded control system
+- Simple sensor interfacing
 
 ---
 
@@ -332,22 +344,22 @@ Provide external power supply to motors and Arduino.
 This project can be used in:
 
 - Industrial Automation
-- Fire Safety Systems
-- Smart Robotics
-- Warehouse Monitoring
-- Educational Robotics
-- Autonomous Navigation Systems
+- Warehouse Robots
+- Automated Guided Vehicles (AGV)
+- Smart Transportation
+- Robotics Learning
+- Educational Projects
 
 ---
 
 # ✅ Advantages
 
-- Autonomous operation
-- Fast fire detection
-- Compact robotic design
-- Low-cost implementation
-- Real-time monitoring
-- Easy sensor integration
+- Simple implementation
+- Low-cost design
+- Real-time navigation
+- Easy programming
+- Compact structure
+- Efficient movement control
 
 ---
 
@@ -356,27 +368,25 @@ This project can be used in:
 Through this project, the following concepts were learned:
 
 - Arduino Programming
-- Sensor Interfacing
-- Robotics Control
 - Embedded Systems
+- IR Sensor Interfacing
 - Motor Driver Control
-- Servo Motor Operation
-- Fire Detection Systems
-- Autonomous Navigation
+- Robotics Navigation
+- Autonomous Systems
+- PWM Speed Control
 
 ---
 
 # 🔮 Future Enhancements
 
-The project can be improved further by adding:
+The project can be extended by adding:
 
-- IoT Monitoring
-- Bluetooth/WiFi Control
-- Camera Integration
-- AI-based Navigation
-- Smoke Sensors
 - Obstacle Avoidance
-- Mobile App Control
+- Bluetooth/WiFi Control
+- PID Control Algorithm
+- Camera-based Navigation
+- IoT Monitoring
+- AI-based Path Detection
 
 ---
 
