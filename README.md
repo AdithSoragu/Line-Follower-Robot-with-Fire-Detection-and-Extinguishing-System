@@ -205,14 +205,7 @@ Both sensors fail to detect the line
 
 The robot stops moving.
 
----
 
-# 🧩 Arduino Code Logic
-
-The Arduino program:
-- Reads sensor values
-- Controls motor directions
-- Adjusts motor speed
 
 
 ---
