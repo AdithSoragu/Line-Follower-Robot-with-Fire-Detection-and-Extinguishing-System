@@ -129,16 +129,7 @@ Power is supplied to:
 
 ---
 
-# 📌 IR Sensor Connections
 
-| IR Sensor | Arduino Pin |
-|-----------|-------------|
-| IR Right | A0 |
-| IR Left | A1 |
-
-The sensors detect:
-- Black line
-- White surface
 
 ---
 
