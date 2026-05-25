@@ -283,13 +283,6 @@ The wiring diagram clearly shows:
 
 ---
 
-# ▶️ How to Run the Project
-
-## Step 1: Assemble Hardware
-
-Connect:
-- Arduino UNO
-- IR sensors
 
 
 ---
