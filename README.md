@@ -185,14 +185,6 @@ The robot turns left to correct its position.
 
 ---
 
-# ↪️ Right Turn
-
-When:
-```text
-Right sensor moves away from line
-```
-
-The robot turns right to correct its direction.
 
 
 
