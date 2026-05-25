@@ -94,14 +94,6 @@ The robot consists of:
 
 ---
 
-# 📌 Circuit Connections
-
-The robot uses:
-- Two IR sensors for line detection
-- L298N motor driver for controlling motors
-- Arduino UNO as the central controller
-
----
 
 
 
