@@ -39,7 +39,6 @@ The major objectives of this project are:
 - Learn real-time sensor processing
 
 ---
-
 # 🧠 Introduction
 
 A line follower robot is an autonomous robot that follows a predefined path marked using a black line on a white surface.
