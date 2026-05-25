@@ -230,7 +230,7 @@ The fire detection system can be used in:
 # 👨‍💻 Author
 
 ## Adith Soragu
-## Allumala Yashwanth
+## Allumala Yaswanth
 ## Likith DK
 ## K Shobith Kumar
 
