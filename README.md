@@ -368,12 +368,6 @@ This project can be used in:
 Through this project, the following concepts were learned:
 
 - Arduino Programming
-- Embedded Systems
-- IR Sensor Interfacing
-- Motor Driver Control
-- Robotics Navigation
-- Autonomous Systems
-- PWM Speed Control
 
 
 ---
