@@ -393,7 +393,9 @@ The project can be extended by adding:
 # 👨‍💻 Author
 
 ## Adith Soragu
-
+## Allumala Yashwanth
+## Likith DK
+## K Shobith Kumar
 
 ---
 
