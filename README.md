@@ -219,18 +219,7 @@ The fire detection system can be used in:
 
 
 
-# 🚀 Applications
 
-This project can be used in:
-
-- Industrial Automation
-- Warehouse Robots
-- Automated Guided Vehicles (AGV)
-- Smart Transportation
-- Robotics Learning
-- Educational Projects
-
----
 
 # ✅ Advantages
 
