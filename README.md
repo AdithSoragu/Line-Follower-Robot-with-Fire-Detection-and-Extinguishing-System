@@ -326,16 +326,6 @@ Place robot on track and observe:
 - Right turns
 - Automatic line correction
 
----
-
-# 📊 Features of the Robot
-
-- Autonomous navigation
-- Real-time line tracking
-- Motor speed control
-- Compact robotic design
-- Embedded control system
-- Simple sensor interfacing
 
 ---
 
