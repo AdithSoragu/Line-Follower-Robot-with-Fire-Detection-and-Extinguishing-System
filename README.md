@@ -375,18 +375,6 @@ Through this project, the following concepts were learned:
 - Autonomous Systems
 - PWM Speed Control
 
----
-
-# 🔮 Future Enhancements
-
-The project can be extended by adding:
-
-- Obstacle Avoidance
-- Bluetooth/WiFi Control
-- PID Control Algorithm
-- Camera-based Navigation
-- IoT Monitoring
-- AI-based Path Detection
 
 ---
 
