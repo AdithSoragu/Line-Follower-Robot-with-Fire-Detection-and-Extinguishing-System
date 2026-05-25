@@ -350,8 +350,6 @@ This project can be used in:
 - Easy programming
 - Compact structure
 - Efficient movement control
-
-
 ---
 
 # 👨‍💻 Author
