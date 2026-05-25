@@ -67,19 +67,6 @@ The robot consists of:
 - Switch Module
 - Robot Chassis
 
----
-
-# 📂 Project Structure
-
-```text
-Line_Follower_Robot/
-│
-├── line_follower.ino        # Arduino Source Code
-├── circuit_diagram.png      # Circuit Connections
-├── robot_images/            # Project Images
-├── documentation/           # Reports and Notes
-└── README.md                # Documentation
-```
 
 ---
 
