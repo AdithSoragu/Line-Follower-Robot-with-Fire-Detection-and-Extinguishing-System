@@ -217,10 +217,6 @@ The fire detection system can be used in:
 
 ---
 
-
-
-
-
 # ✅ Advantages
 
 - Simple implementation
