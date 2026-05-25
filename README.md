@@ -228,15 +228,7 @@ Reads line sensor outputs.
 
 ---
 
-# 📌 Forward Logic
 
-```cpp
-rotateMotor(MOTOR_SPEED, MOTOR_SPEED);
-```
-
-Both motors rotate forward.
-
----
 
 
 ---
