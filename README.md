@@ -404,6 +404,3 @@ If you found this project useful, consider giving it a ⭐ on GitHub.
 
 ---
 
-# 📄 License
-
-This project is developed for educational and learning purposes only.
