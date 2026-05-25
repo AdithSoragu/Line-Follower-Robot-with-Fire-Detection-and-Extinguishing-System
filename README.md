@@ -94,11 +94,6 @@ The robot consists of:
 
 ---
 
-
-
-
----
-
 # 📷 Circuit Diagram
 
 The circuit includes:
