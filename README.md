@@ -238,16 +238,6 @@ Both motors rotate forward.
 
 ---
 
-# 📌 Turning Logic
-
-```cpp
-rotateMotor(-MOTOR_SPEED, MOTOR_SPEED);
-```
-
-Robot turns right.
-
-
-
 
 ---
 
