@@ -361,14 +361,6 @@ This project can be used in:
 - Compact structure
 - Efficient movement control
 
----
-
-# 📚 Learning Outcomes
-
-Through this project, the following concepts were learned:
-
-- Arduino Programming
-
 
 ---
 
