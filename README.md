@@ -318,13 +318,6 @@ Switch ON the robot using external power supply.
 
 ---
 
-## Step 5: Test Navigation
-
-Place robot on track and observe:
-- Forward movement
-- Left turns
-- Right turns
-- Automatic line correction
 
 
 ---
