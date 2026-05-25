@@ -300,10 +300,6 @@ Connect:
 
 Open Arduino IDE and upload:
 
-```text
-line_follower.ino
-```
-
 
 ---
 
