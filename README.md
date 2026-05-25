@@ -310,13 +310,6 @@ line_follower.ino
 
 Create a black line path on a white surface.
 
----
-
-## Step 4: Power the Robot
-
-Switch ON the robot using external power supply.
-
----
 
 
 
