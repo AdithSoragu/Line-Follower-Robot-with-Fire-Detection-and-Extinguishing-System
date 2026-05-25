@@ -213,14 +213,6 @@ The Arduino program:
 - Reads sensor values
 - Controls motor directions
 - Adjusts motor speed
-- Maintains line tracking
-
----
-
-# 📌 Sensor Reading
-
-
-
 
 
 ---
