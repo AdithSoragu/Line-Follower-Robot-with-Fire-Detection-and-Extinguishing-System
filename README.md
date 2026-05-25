@@ -110,6 +110,137 @@ The wiring diagram clearly shows:
 
 ---
 
+````md id="firepart01"
+# 🔥 Fire Detection and Extinguishing System
+
+The robot is integrated with a fire detection and extinguishing mechanism to improve safety and automation capabilities.
+
+The system uses a **Flame Sensor** to continuously monitor fire conditions while the robot performs line following operations. When fire is detected, the robot automatically stops moving and activates a fan-based extinguishing system.
+
+---
+
+# 🧠 Working Principle
+
+The flame sensor continuously checks for the presence of fire.
+
+When a flame is detected:
+- The robot immediately stops
+- Fan motor turns ON
+- Servo motor rotates to scan the fire direction
+- Fire extinguishing process begins
+
+This creates an automatic emergency response system.
+
+---
+
+# 📌 Components Used
+
+| Component | Function |
+|-----------|-----------|
+| Flame Sensor | Detects fire/flame |
+| Servo Motor | Rotates to scan flame direction |
+| Fan/Coreless Motor | Extinguishes fire |
+| Arduino UNO | Controls the system |
+
+---
+
+# 🔥 Flame Detection Logic
+
+The flame sensor output is continuously monitored using Arduino.
+
+```cpp
+int flameValue = digitalRead(FLAME_SENSOR);
+```
+
+When fire is detected:
+
+```cpp
+if(flameValue == LOW)
+```
+
+The Arduino identifies the emergency condition and activates the fire response system.
+
+---
+
+# 🛑 Robot Stop Mechanism
+
+Once fire is detected, the robot immediately stops moving.
+
+```cpp
+rotateMotor(0,0);
+```
+
+This prevents unnecessary movement near the fire source.
+
+---
+
+# 🌬️ Fan Activation
+
+The fan motor automatically turns ON to extinguish the flame.
+
+```cpp
+digitalWrite(FAN_PIN,HIGH);
+```
+
+The fan blows air toward the fire source to suppress small flames.
+
+---
+
+# 🌀 Servo Motor Scanning
+
+The servo motor rotates to scan different directions for the flame.
+
+```cpp
+fireServo.write(40);
+fireServo.write(90);
+fireServo.write(140);
+```
+
+The servo scans:
+- Left direction
+- Center direction
+- Right direction
+
+This helps identify the approximate flame location.
+
+---
+
+# 📊 Features of Fire Detection System
+
+- Automatic flame detection
+- Real-time emergency response
+- Automatic robot stopping
+- Fan-based extinguishing mechanism
+- Servo-based directional scanning
+- Embedded fire safety automation
+
+---
+
+# 🚀 Applications
+
+The fire detection system can be used in:
+
+- Industrial Safety Robots
+- Fire Rescue Systems
+- Smart Automation
+- Hazard Monitoring Systems
+- Warehouse Safety Monitoring
+- Educational Robotics Projects
+
+---
+
+# ✅ Advantages
+
+- Fast fire detection
+- Automatic emergency response
+- Low-cost implementation
+- Compact design
+- Improved robotic safety
+- Real-time monitoring
+
+````
+
+
 # 🚀 Applications
 
 This project can be used in:
