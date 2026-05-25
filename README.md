@@ -194,16 +194,7 @@ Right sensor moves away from line
 
 The robot turns right to correct its direction.
 
----
 
-# 🛑 Stop Condition
-
-When:
-```text
-Both sensors fail to detect the line
-```
-
-The robot stops moving.
 
 
 
