@@ -116,19 +116,6 @@ The robot uses:
 
 ---
 
-# 🔌 Power Supply
-
-```text
-7V – 12V DC
-```
-
-Power is supplied to:
-- Arduino UNO
-- Motor Driver
-- DC Motors
-
----
-
 
 
 ---
