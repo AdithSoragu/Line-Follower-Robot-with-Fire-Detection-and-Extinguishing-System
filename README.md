@@ -254,16 +254,6 @@ Robot turns left.
 
 ---
 
-# 📌 Motor Control Function
-
-```cpp
-void rotateMotor(int rightMotorSpeed, int leftMotorSpeed)
-```
-
-Controls:
-- Motor direction
-- Robot movement
-- Speed adjustment
 
 ---
 
