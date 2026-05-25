@@ -290,15 +290,6 @@ The wiring diagram clearly shows:
 Connect:
 - Arduino UNO
 - IR sensors
-- L298N motor driver
-- DC motors
-- Battery supply
-
----
-
-## Step 2: Upload Arduino Code
-
-Open Arduino IDE and upload:
 
 
 ---
