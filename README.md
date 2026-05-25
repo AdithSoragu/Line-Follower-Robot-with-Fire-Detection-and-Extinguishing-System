@@ -110,7 +110,6 @@ The wiring diagram clearly shows:
 
 ---
 
-````md id="firepart01"
 # 🔥 Fire Detection and Extinguishing System
 
 The robot is integrated with a fire detection and extinguishing mechanism to improve safety and automation capabilities.
@@ -203,16 +202,7 @@ The servo scans:
 
 This helps identify the approximate flame location.
 
----
 
-# 📊 Features of Fire Detection System
-
-- Automatic flame detection
-- Real-time emergency response
-- Automatic robot stopping
-- Fan-based extinguishing mechanism
-- Servo-based directional scanning
-- Embedded fire safety automation
 
 ---
 
