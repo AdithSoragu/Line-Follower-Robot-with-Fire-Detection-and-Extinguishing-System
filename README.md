@@ -183,13 +183,6 @@ Left sensor moves away from line
 
 The robot turns left to correct its position.
 
----
-
-
-
-
-
-
 
 ---
 
