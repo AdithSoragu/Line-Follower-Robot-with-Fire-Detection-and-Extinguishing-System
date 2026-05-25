@@ -27,7 +27,6 @@ The project focuses on:
 - Autonomous navigation
 
 ---
-
 # 🎯 Objectives
 
 The major objectives of this project are:
