@@ -281,7 +281,6 @@ The wiring diagram clearly shows:
 - Motor driver interface
 - Power distribution
 
----
 
 
 
