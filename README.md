@@ -163,16 +163,6 @@ The Arduino reads sensor outputs and controls the motors accordingly.
 
 ---
 
-# 🚗 Forward Movement
-
-When:
-```text
-Both sensors detect the black line
-```
-
-The robot moves forward.
-
----
 
 
 
