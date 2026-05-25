@@ -174,14 +174,6 @@ The robot moves forward.
 
 ---
 
-# ↩️ Left Turn
-
-When:
-```text
-Left sensor moves away from line
-```
-
-The robot turns left to correct its position.
 
 
 ---
