@@ -9,7 +9,6 @@
 </p>
 
 ---
-
 # 📌 Project Overview
 
 This project demonstrates the design and implementation of an **Arduino-based Line Follower Robot** using:
