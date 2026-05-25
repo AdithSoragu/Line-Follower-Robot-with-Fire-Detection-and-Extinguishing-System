@@ -153,12 +153,6 @@ The sensors detect:
 | ENA | Right Motor Speed |
 | ENB | Left Motor Speed |
 
----
-
-
-
-
-
 
 ---
 
