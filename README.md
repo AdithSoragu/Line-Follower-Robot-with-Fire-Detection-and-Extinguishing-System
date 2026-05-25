@@ -304,14 +304,6 @@ Open Arduino IDE and upload:
 line_follower.ino
 ```
 
----
-
-## Step 3: Prepare Track
-
-Create a black line path on a white surface.
-
-
-
 
 ---
 
