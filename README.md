@@ -155,13 +155,7 @@ The sensors detect:
 
 ---
 
-# 🔄 Working Principle
 
-The line follower robot continuously detects the line using IR sensors.
-
-The Arduino reads sensor outputs and controls the motors accordingly.
-
----
 
 
 
