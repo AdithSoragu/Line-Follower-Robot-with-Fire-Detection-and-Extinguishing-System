@@ -246,13 +246,7 @@ rotateMotor(-MOTOR_SPEED, MOTOR_SPEED);
 
 Robot turns right.
 
-```cpp
-rotateMotor(MOTOR_SPEED, -MOTOR_SPEED);
-```
 
-Robot turns left.
-
----
 
 
 ---
