@@ -394,7 +394,6 @@ The project can be extended by adding:
 
 ## Adith Soragu
 
-Electronics and Communication Engineering
 
 ---
 
