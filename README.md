@@ -219,14 +219,6 @@ The Arduino program:
 
 # 📌 Sensor Reading
 
-```cpp
-int rightIRSensorValue = digitalRead(IR_SENSOR_RIGHT);
-int leftIRSensorValue = digitalRead(IR_SENSOR_LEFT);
-```
-
-Reads line sensor outputs.
-
----
 
 
 
